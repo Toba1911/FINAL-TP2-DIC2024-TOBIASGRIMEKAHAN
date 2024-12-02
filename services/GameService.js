@@ -19,7 +19,7 @@ class GameService {
             typeof precio !== "number" || 
             precio <= 0 || 
             typeof stock !== "number" || 
-            stock < 0
+            stock <= 0
         ) {
             throw new Error("Los datos ingresados no son válidos. Verifica los valores.");
         }
